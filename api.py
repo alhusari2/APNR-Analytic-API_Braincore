@@ -219,12 +219,10 @@ def ocr(image):
     generated_text = processor_ocr.batch_decode(generated_ids, skip_special_tokens=True)[0]
     return generated_text
 
-# Endpoint untuk Mendapatkan Gambar yang Telah Disimpan
 @app.route('/api/gambar/<path:filename>', methods=['GET'])
 def get_image(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
-# Endpoint Gabungan untuk Prediksi dan Analisis Plat Nomor
 @app.route('/prediction', methods=['POST'])
 def prediction():
     if 'image' not in request.files:
@@ -236,13 +234,8 @@ def prediction():
 
     if reqImage and allowed_file(reqImage.filename):
         try:
-            # Simpan Gambar
             image_path = save_image(reqImage)
-
-            # Deteksi dan Crop Plat Nomor
             cropped_image = crop(image_path)
-
-            # OCR untuk Mendapatkan Teks Plat Nomor
             plate_text = ocr(cropped_image)
 
             # Analisis Plat Nomor
@@ -250,20 +243,10 @@ def prediction():
             if pisahan is None:
                 return jsonify({"error": "Format nomor plat tidak valid"}), HTTPStatus.BAD_REQUEST
             huruf_awal, angka, huruf_akhir = pisahan
-
-            # Cari Daerah dan Wilayah
             nama_daerah, nama_wilayah = daerah_dari_huruf_awal(huruf_awal)
-
-            # Klasifikasikan Jenis Kendaraan
             jenis_kendaraan = klasifikasi_kendaraan(angka)
-
-            # Masukkan Jenis Kendaraan ke Database
             insert_jenis_kendaraan(plate_text, jenis_kendaraan)
-
-            # Simpan Path Gambar ke Database
             save_image_path(plate_text, image_path)
-
-            # Catat Log
             log_to_file(plate_text, nama_daerah, nama_wilayah, jenis_kendaraan)
 
             return jsonify({
