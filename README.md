@@ -12,7 +12,13 @@ API ini digunakan untuk melakukan deteksi dan analisis plat nomor kendaraan seca
 ### Model TrOCR
 
 - **V1 **: https://huggingface.co/Sans1807/APNR-Braincore-V2
-- **V2 **: https://huggingface.co/Sans1807/APNR-Braincore-V1 
+- **V2 **: https://huggingface.co/Sans1807/APNR-Braincore-V1
+
+### Model YoloV8 Object Detection
+
+- **https://github.com/patriciasky17/apnr-braincore/tree/master/runs/detect/train9/weights**
+
+
 ### Response:
 API akan mengembalikan hasil deteksi teks dari plat nomor pada gambar serta analisis dari nomor plat yang telah dideteksi.
 
