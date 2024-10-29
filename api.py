@@ -250,11 +250,13 @@ def prediction():
             log_to_file(plate_text, nama_daerah, nama_wilayah, jenis_kendaraan)
 
             return jsonify({
-                "nomor_plat": plate_text,
-                "daerah": nama_daerah,
-                "wilayah": nama_wilayah,
-                "jenis_kendaraan": jenis_kendaraan,
-                "image_path": image_path
+                "data": {
+                    "nomor_plat": plate_text,
+                    "daerah": nama_daerah,
+                    "wilayah": nama_wilayah,
+                    "jenis_kendaraan": jenis_kendaraan,
+                    "image_path": image_path
+                }
             }), HTTPStatus.OK
 
         except Exception as e:
