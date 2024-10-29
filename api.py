@@ -108,7 +108,7 @@ def pisahkan_nomor_plat(nomor_plat):
     if match:
         return match.group(1), match.group(2), match.group(3)
     else:
-        return None
+        return None,None,None
 
 # Peta Wilayah dan Daerah
 sumatera_map = {
@@ -211,7 +211,7 @@ def crop(image_path):
             return crop_obj
     else:
         raise ValueError("Tidak ditemukan plat nomor dalam gambar.")
-
+    
 # Fungsi untuk Melakukan OCR pada Gambar Plat Nomor
 def ocr(image):
     pixel_values = processor_ocr(image, return_tensors='pt').pixel_values
