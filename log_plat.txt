@@ -1,0 +1,14 @@
+2024-11-23 16:56:56 - Plat: D10060Z, Daerah: Bandung, Wilayah: Jawa Barat, Jenis Kendaraan: Tidak diketahui
+2024-11-23 17:04:53 - Plat: D10060Z, Daerah: Bandung, Wilayah: Jawa Barat, Jenis Kendaraan: Tidak diketahui
+2024-11-23 17:07:29 - Plat: B2155SKQ, Daerah: Jakarta, Depok, Bekasi, Wilayah: Jakarta, Jenis Kendaraan: Sepeda Motor
+2024-11-23 17:07:32 - Plat: B2155SKQ, Daerah: Jakarta, Depok, Bekasi, Wilayah: Jakarta, Jenis Kendaraan: Sepeda Motor
+2024-11-23 17:11:34 - Plat: B1560BJF, Daerah: Jakarta, Depok, Bekasi, Wilayah: Jakarta, Jenis Kendaraan: Kendaraan Penumpang
+2024-11-23 17:14:59 - Plat: B1560BJF, Daerah: Jakarta, Depok, Bekasi, Wilayah: Jakarta, Jenis Kendaraan: Kendaraan Penumpang
+2024-11-23 17:17:02 - Plat: B1560BJF, Daerah: Jakarta, Depok, Bekasi, Wilayah: Jakarta, Jenis Kendaraan: Kendaraan Penumpang
+2024-11-23 17:18:17 - Plat: B1560BJF, Daerah: Jakarta, Depok, Bekasi, Wilayah: Jakarta, Jenis Kendaraan: Kendaraan Penumpang
+2024-11-23 17:18:59 - Plat: B1560BJF, Daerah: Jakarta, Depok, Bekasi, Wilayah: Jakarta, Jenis Kendaraan: Kendaraan Penumpang
+2024-11-23 17:20:57 - Plat: B1560BJF, Daerah: Jakarta, Depok, Bekasi, Wilayah: Jakarta, Jenis Kendaraan: Kendaraan Penumpang
+2024-11-23 17:22:52 - Plat: B1560BJF, Daerah: Jakarta, Depok, Bekasi, Wilayah: Jakarta, Jenis Kendaraan: Kendaraan Penumpang
+2024-11-24 10:25:58 - Plat: B4029TLO, Daerah: Jakarta, Depok, Bekasi, Wilayah: Jakarta, Jenis Kendaraan: Sepeda Motor
+2024-11-24 10:27:42 - Plat: B4029TLO, Daerah: Jakarta, Depok, Bekasi, Wilayah: Jakarta, Jenis Kendaraan: Sepeda Motor
+2024-11-24 10:28:32 - Plat: B4029TLO, Daerah: Jakarta, Depok, Bekasi, Wilayah: Jakarta, Jenis Kendaraan: Sepeda Motor

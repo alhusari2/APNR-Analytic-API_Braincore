@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APNR Web Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .description {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #777;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Automatic Plate Number Recognition (APNR)
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Welcome to APNR</h1>
+            <p>Start detecting license plates by clicking the button below.</p>
+            <!-- Fixed the href to point to the Flask route -->
+            <a href="/prediction" class="btn">Start Detection</a>
+            <div class="description">
+                <p><strong>How to Use:</strong></p>
+                <ul>
+                    <li>Click the "Start Detection" button to begin.</li>
+                    <li>Upload an image containing vehicle license plates.</li>
+                    <li>Wait for the system to process and display the recognized license plates.</li>
+                    <li>Download or review the results as needed.</li>
+                </ul>
+                <p>This system is designed for efficient and accurate recognition of license plates in various formats. For best results, ensure the images or videos are clear and the plates are fully visible.</p>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
